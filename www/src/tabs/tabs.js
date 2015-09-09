@@ -11,6 +11,9 @@ angular.module('places')
 			})
 			// Each tab has its own nav history stack:
 			.state('tab.my-place', {
+				data:{
+					title: "My place"
+				},
 				url: '/my-place',
 				views: {
 					'tab-my-place': {
@@ -19,6 +22,9 @@ angular.module('places')
 				}
 			})
 			.state('tab.add-place', {
+				data:{
+					title: "Add place"
+				},
 				url: '/add-place',
 				views: {
 					'tab-add-place': {
@@ -27,6 +33,9 @@ angular.module('places')
 				}
 			})
 			.state('tab.around-me', {
+				data:{
+					title: "Around me"
+				},
 				url: '/around-me',
 				views: {
 					'tab-around-me': {
@@ -35,6 +44,9 @@ angular.module('places')
 				}
 			})
 			.state('tab.friends', {
+				data:{
+					title: "Friends"
+				},
 				url: '/friends',
 				views: {
 					'tab-friends': {
