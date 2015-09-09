@@ -1,0 +1,16 @@
+<ion-side-menus>
+  <!-- Left menu -->
+  <ion-side-menu side="right">
+     <div class="padding">
+     	<h3>Hello Quentin</h3>
+     	Exsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus.
+        <button ui-sref="login" class="button button-full button-assertive">Logout</button>
+    </div>
+  </ion-side-menu>
+
+  <ion-side-menu-content>
+      <ng-include src="&apos;src/header/header.html&apos;" ng-controller="HeaderCtrl"></ng-include>
+      <ng-include src="&apos;src/tabs/tabs.html&apos;" ng-controller="HeaderCtrl"></ng-include>  
+  </ion-side-menu-content>
+
+</ion-side-menus>
