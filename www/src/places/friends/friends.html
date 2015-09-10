@@ -4,8 +4,13 @@
           A
       </div>
 
-      <a class="item" href="#">
-          Alhan
-      </a>
+
+        <div class="list">
+            <a class="item"
+               ng-repeat="item in list track by $index">
+                <h2>{{item.name}} {{$index}}</h2>
+            </a>
+        </div>
+
   </ion-content>
 </ion-view>
