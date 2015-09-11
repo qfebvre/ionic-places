@@ -45,7 +45,8 @@ angular.module('places')
 				},
 				views: {
 					'tab-add-place': {
-						templateUrl: 'src/places/add/add-place.html'
+						templateUrl: 'src/places/add/add-place.html',
+						controller: 'PictureCtrl'
 					}
 				}
 			})
