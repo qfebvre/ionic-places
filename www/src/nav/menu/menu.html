@@ -1,7 +1,7 @@
 <ion-side-menus enable-menu-with-back-views="true">
 
     <!-- Right menu -->
-    <ion-side-menu side="right">
+    <ion-side-menu side="left">
         <a class="item item-icon-left item-text-wrap" href="#">
             <i class="icon ion-ionic"></i>
             <h2>Hello Ionic</h2>
@@ -13,8 +13,8 @@
     </ion-side-menu>
 
     <!-- Center content -->
-    <ion-side-menu-content>
-        <ng-include src="'src/nav/header/header.html'" ng-controller="HeaderCtrl"></ng-include>
+    <ion-side-menu-content ng-controller="HeaderCtrl" >
+        <ng-include src="'src/nav/header/header.html'"></ng-include>
         <ng-include src="'src/nav/tabs/tabs.html'" ng-controller="TabsCtrl"></ng-include>
     </ion-side-menu-content>
 </ion-side-menus>

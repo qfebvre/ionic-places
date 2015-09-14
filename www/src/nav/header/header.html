@@ -1,6 +1,11 @@
 <ion-header-bar align-title="center" class="bar-positive" ng-if="enabled">
-    <h1 class="title">{{title}}</h1>
+
     <div class="buttons">
-        <i class="button button-icon icon ion-navicon" menu-toggle="right"></i>
+        <i class="button button-icon icon ion-navicon" menu-toggle="left"></i>
     </div>
+
+    <h1 class="title">{{title}}</h1>
+
+    <button class="button button-icon icon ion-ios-search-strong" ng-if="searchEnabled" ng-click="showFilterBar()"></button>
+
 </ion-header-bar>

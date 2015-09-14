@@ -1,7 +1,10 @@
 "use strict";
 
 angular.module('places')
-	.controller('MyPlaceCtrl', function($rootScope,$scope,$state) {
+	.controller('MyPlaceCtrl', function($rootScope,$scope,$state, $ionicFilterBar) {
+
+
+console.log("MyPlaceCtrl",$scope.list);
 
 		var list =[
 			{
@@ -10,55 +13,61 @@ angular.module('places')
 				image:'http://lorempicsum.com/futurama/100/100/1'
 			},
 			{
-				name:'geneva',
+				name:'paris',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/2'
 			},
 			{
-				name:'geneva',
+				name:'barcelone',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/3'
 			},
 			{
-				name:'geneva',
+				name:'madrid',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/4'
 			},
 			{
-				name:'geneva',
+				name:'new york',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/5'
 			},
 			{
-				name:'geneva',
+				name:'marseille',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/6'
 			},
 			{
-				name:'geneva',
+				name:'londres',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/7'
 			},
 			{
-				name:'geneva',
+				name:'berlin',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/8'
 			},
 			{
-				name:'geneva',
+				name:'rome',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/9'
 			}
 		];
 
 		//duplicate data to test performance
-		for (var i = 0; i < 5; i++) {
-			list = list.concat(list.slice(0))
-		}
+		// for (var i = 0; i < 5; i++) {
+		// 	list = list.concat(list.slice(0))
+		// }
 		//properties
-		$scope.list = list;
+		$scope.model.list = list;
+
+		$rootScope.$emit("searchListInilize");
+
 
 		$scope.ok = true;
+
+
+
 
 
 	});
