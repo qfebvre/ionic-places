@@ -11,6 +11,8 @@ angular.module('places')
 		$scope.enabled = _isEnabled();
 		$scope.title = _getTitle();
 		$scope.searchEnabled = _searchEnabled();
+		$scope.imagesEnabled = _imagesEnabled();
+		$scope.menuEnabled = _menuEnabled();
 
 		//events
 		$rootScope.$on('$stateChangeSuccess',
@@ -19,6 +21,8 @@ angular.module('places')
 				$scope.title = _getTitle();
 				$scope.enabled = _isEnabled();
 				$scope.searchEnabled = _searchEnabled();
+				$scope.imagesEnabled = _imagesEnabled();
+				$scope.menuEnabled = _menuEnabled();
 
 		});
 
@@ -33,6 +37,12 @@ angular.module('places')
 
 		function _searchEnabled(){
 			return $state.is("tab.my-place");
+		};
+		function _imagesEnabled(){
+			return $state.is("tab.place");
+		};
+		function _menuEnabled(){
+			return !$state.is("tab.place");
 		};
 
 

@@ -38,6 +38,18 @@ angular.module('places')
 					}
 				}
 			})
+			.state('tab.place', {
+				url: '/my-place/:id',
+				data:{
+					title:"place"
+				},
+				views: {
+					'tab-my-place': {
+						templateUrl: 'src/places/place/place.html',
+						controller:'MyPlaceCtrl'
+					}
+				}
+			})
 			.state('tab.add-place', {
 				url: '/add-place',
 				data:{

@@ -4,51 +4,51 @@ angular.module('places')
 	.controller('MyPlaceCtrl', function($rootScope,$scope,$state, $ionicFilterBar) {
 
 
-console.log("MyPlaceCtrl",$scope.list);
+// console.log("MyPlaceCtrl",$scope.list);
 
 		var list =[
 			{
-				name:'geneva',
+				name:'Geneva',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/1'
 			},
 			{
-				name:'paris',
+				name:'Paris',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/2'
 			},
 			{
-				name:'barcelone',
+				name:'Barcelone',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/3'
 			},
 			{
-				name:'madrid',
+				name:'Madrid',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/4'
 			},
 			{
-				name:'new york',
+				name:'New York',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/5'
 			},
 			{
-				name:'marseille',
+				name:'Marseille',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/6'
 			},
 			{
-				name:'londres',
+				name:'Londres',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/7'
 			},
 			{
-				name:'berlin',
+				name:'Berlin',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/8'
 			},
 			{
-				name:'rome',
+				name:'Rome',
 				description:'Cool place to see with great robots inside',
 				image:'http://lorempicsum.com/futurama/100/100/9'
 			}

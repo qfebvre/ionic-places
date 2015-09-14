@@ -1,11 +1,13 @@
 <ion-header-bar align-title="center" class="bar-positive" ng-if="enabled">
 
     <div class="buttons">
-        <i class="button button-icon icon ion-navicon" menu-toggle="left"></i>
+        <i class="button button-icon icon ion-navicon" ng-if="menuEnabled" menu-toggle="left"></i>
+        <a class="button icon-left ion-chevron-left button-clear" ng-if="imagesEnabled" ui-sref="tab.my-place">Retour</a>
     </div>
 
     <h1 class="title">{{title}}</h1>
 
     <button class="button button-icon icon ion-ios-search-strong" ng-if="searchEnabled" ng-click="showFilterBar()"></button>
+
 
 </ion-header-bar>
