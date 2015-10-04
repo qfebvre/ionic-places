@@ -1,0 +1,27 @@
+Salut Michael,
+
+
+Tu trouveras ici ma version de l’application My-Place.
+
+J’ai continuer de travailler sur la version de l’app que nous avons fait en cours.
+
+Voici ce que j’y ai ajouté :
+
+- personnalisation CSS
+
+- fonctionnalité de recherche sur la page via un plugin (ionicmarket)
+La recherche fonctionne sur la page « My place»
+
+- fonctionnalité de galerie d’images pour les différentes places de la page « My place ».
+J’ai réussi à ajouter un bouton « Voir la galerie d’image » qui redirige vers de nouvelles pages. Je n’arrive cependant pas à y mettre d’image.
+
+La navigation avec ce nouveau template est fonctionnelle.
+
+
+
+Merci pour ces cours hybrides, c’était vraiment top.
+
+
+++
+
+Quentin Febvre.

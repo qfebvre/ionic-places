@@ -1,8 +1,7 @@
 "use strict";
 
 angular.module('places'['ionic','ion-gallery'])
-	.controller('MySinglePlaceCtrl', function($rootScope,$scope,$state, $ionicFilterBar) {
-
+	.controller('MyPlaceCtrl', function($rootScope,$scope,$state, $ionicFilterBar) {
 
 // console.log("MyPlaceCtrl",$scope.list);
 
